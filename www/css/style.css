@@ -1,0 +1,322 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+header, nav, section, article, aside, footer {
+  display: block;
+}
+body {
+  font: 12px/18px Arial, Tahoma, Verdana, sans-serif;
+  width: 100%;
+}
+a {
+  color: #5b80b3;
+  outline: none;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  text-decoration: none;
+}
+p {
+  margin: 0 0 18px
+}
+img {
+  border: none;
+}
+input {
+  vertical-align: middle;
+}
+br {
+	clear: left;
+}
+
+.home-box {
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	padding: 15px;   
+}
+.box-img {
+	position: relative;
+	bottom: 0;
+}
+
+@media screen {
+	#wrapper {
+	  width: 950px;
+	  margin: 0 auto;
+	}
+	#middle {
+	  width: 950px;
+	  height: 1%;
+	  position: relative;
+	  background: #fff;
+	  height: 400px;
+	}
+	#middle:after {
+	  content: '.';
+	  display: block;
+	  clear: both;
+	  visibility: hidden;
+	  height: 0;
+	}
+	#content {
+	  position: relative;
+	  float: left;
+	  width: 310px;
+	  background: #b4b4b4;
+	  height: 400px;
+	  margin-right: 10px;
+	  margin-left: 10px;
+	}
+	#sideLeft {
+	  float: left;
+	  width: 310px;
+	  position: relative;
+	  background: #68a7bc;
+	  height: 400px;
+	}
+	#sideRight {
+	  float: left;
+	  width: 310px;
+	  position: relative;
+	  background: #5b80b3;
+	  height: 400px;
+	}
+	#uploadBox {
+	  position: absolute;
+	  background: #DDD;
+	  width: 450px;
+	  height: 400px;
+	  display: none;
+	  -moz-border-radius: 15px;
+	  border-radius: 15px;
+	  z-index: 10;
+	  box-shadow: 2px 2px 4px 1px #555;
+	}
+
+	#create_account {
+	 float: left;
+	 width: 600px;
+	 position: relative;
+	 background: #b4b4b4;
+	 height: 500px;
+	}
+
+  #login {
+   float: left;
+   width: 350px;
+   position: relative;
+   background: #b4b4b4;
+   height: 500px;
+  }
+	
+	#header {
+	  height: 110px;
+	  background: #FFF;
+	}
+
+	#footer {
+	  height: 140px;
+	  background: #fff;
+	}
+	.formLayout {
+		padding: 10px;
+		width: 500px;
+		float: left;
+		position: relative;
+	}
+	.formLayout label {
+		display: block;
+		width: 120px;
+		float: left;
+		margin-bottom: 10px;
+		text-align: right;
+		padding-right: 20px;
+	}
+	.formLayout input {
+		display: block;
+		width: 250px;
+		float: left;
+		margin-bottom: 10px;
+	}
+	.login {
+		padding: 10px;
+		width: 400px;
+		float: left;
+		position: relative;
+	}
+	.login label {
+		display: block;
+		width: 120px;
+		float: left;
+		margin-bottom: 10px;
+		text-align: right;
+		padding-right: 20px;
+	}
+	.login input {
+		display: block;
+		width: 240px;
+		float: left;
+		margin-bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	#wrapper {
+	  width: 700px;
+	  margin: 0 auto;
+	}
+
+	#logo {
+		width: 310px;
+		heigh: auto;
+	}
+	
+	#middle {
+	  width: 700px;
+	  height: 1%;
+	  position: relative;
+	  background: #fff;
+	  height: 400px;
+	}
+	#middle:after {
+	  content: '.';
+	  display: block;
+	  clear: both;
+	  visibility: hidden;
+	  height: 0;
+	}
+	#content {
+	  float: none;
+	  width: 310px;
+	  background: #b3b4b4;
+	  height: 400px;
+	  margin-left: 0px;
+	  margin-right: 0px;
+	  margin-top: 5px;
+	  margin-bottom: 5px;
+	}
+	#sideLeft {
+	  float: none;
+	  width: 310px;
+	  position: relative;
+	  background: #68a7bc;
+	  height: 400px;
+	}
+	#sideRight {
+	  float: none;
+	  width: 310px;
+	  position: relative;
+	  background: #5b80b3;
+	  height: 400px;
+	}
+	
+  #login {
+    float: none;
+    width: 700px;
+    position: relative;
+    background: #b4b4b4;
+    height: 250px;
+  }
+
+	#create_account {
+	 float: none;
+	 width: 700px;
+	 position: relative;
+	 background: #b4b4b4;
+	 height: 500px;
+	}
+
+	#header {
+	  height: 110px;
+	  background: #FFF;
+	}
+
+	#footer {
+	  position: relative;
+	  width: 310px;
+	  height: 140px;
+	  background: #fff;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#wrapper {
+	  width: 320px;
+	  margin: 0 auto;
+	}
+
+	#logo {
+		width: 310px;
+		heigh: auto;
+	}
+	
+	#middle {
+	  width: 320px;
+	  height: 1%;
+	  position: relative;
+	  background: #fff;
+	  height: 350px;
+	}
+	#middle:after {
+	  content: '.';
+	  display: block;
+	  clear: both;
+	  visibility: hidden;
+	  height: 0;
+	}
+	#content {
+	  float: none;
+	  width: 310px;
+	  background: #b3b4b4;
+	  height: 350px;
+	  margin-left: 0px;
+	  margin-right: 0px;
+	  margin-top: 5px;
+	  margin-bottom: 5px;
+	}
+	#sideLeft {
+	  float: none;
+	  width: 310px;
+	  position: relative;
+	  background: #68a7bc;
+	  height: 350px;
+	}
+	#sideRight {
+	  float: none;
+	  width: 310px;
+	  position: relative;
+	  background: #5b80b3;
+	  height: 350px;
+	}
+
+  #login {
+    float: none;
+    width: 310px;
+    position: relative;
+    background: #b4b4b4;
+    height: 250px;
+  }
+
+	#create_account {
+	 float: none;
+	 width: 310px;
+	 position: relative;
+	 background: #b4b4b4;
+	 height: 500px;
+	}
+	
+	#header {
+	  height: 80px;
+	  background: #FFF;
+	}
+
+	#footer {
+	  position: relative;
+	  width: 310px;
+	  height: 140px;
+	  background: #fff;
+	}
+}
+

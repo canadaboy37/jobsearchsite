@@ -1,0 +1,21 @@
+Software Tools needed
+
+apt-get
+* antiword
+* rabbitmq-server
+* libblas-dev
+* liblapack-dev
+* libmysqlclient-dev
+
+easy_install
+* BeautifulSoup
+* numpy
+* scipy
+* nltk
+* celery
+* sqlalchemy
+* mysql-python
+
+python
+* use nltk.download() to retrieve stopwords and punkt
+
